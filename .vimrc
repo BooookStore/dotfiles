@@ -6,7 +6,6 @@ syntax on "コードの色分け
 set tabstop=4 "インデントをスペース４つ分に設定
 set smartindent "オートインデント
 
-colorscheme molokai "カラーテーマを設定
 
 " タブ幅とインデント幅
 set tabstop=2 "Tabの幅
@@ -36,11 +35,14 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'tomasr/molokai'
 
 call neobundle#end()
 
 " 起動時に未インストールのプラグインをインストール
 NeoBundleCheck
+
+colorscheme molokai "カラーテーマを設定
 
 " ファイルタイプ別のプラグイン・インデントを有効にする
 filetype plugin indent on
